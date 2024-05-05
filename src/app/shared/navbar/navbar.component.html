@@ -1,0 +1,68 @@
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand"
+      [routerLink]="['/home']"
+      routerLinkActive="router-link-active"
+    >
+      <img
+        src="../assets/img/JA-black.png"
+        alt="JA Padel Academy Logo"
+        style="width: 100px"
+        class="vh-50 ms-2"
+      />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link border-end"
+            routerLink="/home"
+            aria-current="page"
+            href="#"
+            >Quiénes somos</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-end" routerLink="/tienda">Tienda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-end" href="#">Nuestras clases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link border-end" href="#">MovinPadel</a>
+        </li>
+        <li *ngIf="authService.isAdmin()">
+          <a class="nav-link border-end" routerLink="/tienda/newproduct"
+            >New Product</a
+          >
+        </li>
+      </ul>
+      <button
+        mat-raised-button
+        [matBadge]="cartQuantity"
+        matBadgeColor="accent"
+        matBadgePosition="above before"
+        class="ms-3"
+        routerLink="/tienda/cart"
+        routerLinkActive="active"
+      >
+        <mat-icon>shopping_cart</mat-icon> Cesta
+      </button>
+      <button mat-raised-button color="primary" (click)="openLoginDialog()">
+        Login
+      </button>
+    </div>
+  </div>
+</nav>

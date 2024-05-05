@@ -1,0 +1,34 @@
+<div
+  *ngIf="
+    selectedProduct &&
+    selectedProduct.reviews &&
+    selectedProduct.reviews.length > 0
+  "
+  class="row my-3"
+>
+  <div class="d-flex justify-content-left">
+    <h2>Reviews</h2>
+  </div>
+  <div
+    *ngFor="let review of selectedProduct.reviews"
+    class="d-flex flex-column mt-4"
+  >
+    <div class="row d-flex flex-wrap mb-4">
+      <div class="col-2 border-bottom">
+        <i class="bi bi-person-circle fs-1"></i>
+      </div>
+      <div class="col-4">
+        <p class="mb-0">{{ review.name }}</p>
+        <p class="mb-0">{{ review.date| date: 'dd-MM-yyyy HH:ss' }}</p>
+        <div class="d-flex flex-row">
+          <app-stars-rating
+            [rating]="selectedProduct.rating"
+          ></app-stars-rating>
+        </div>
+      </div>
+      <div class="col-6">
+        <p>{{ review.opinion }}</p>
+      </div>
+    </div>
+  </div>
+</div>

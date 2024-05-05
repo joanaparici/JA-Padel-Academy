@@ -1,0 +1,8 @@
+<h2>Login</h2>
+<form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="my-4">
+  <mat-form-field appearance="fill" class="w-100 mb-4">
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="username" />
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit" class="w-100">Login</button>
+</form>

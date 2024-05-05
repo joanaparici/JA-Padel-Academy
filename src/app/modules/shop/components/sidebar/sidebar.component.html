@@ -1,0 +1,58 @@
+<div class="container border-right">
+  <div class="d-flex flex-column">
+    <button
+      mat-raised-button
+      color="secondary"
+      class="mb-3 mt-5"
+      [ngClass]="{ active: activeFilter === 'cheaper' }"
+      (click)="onFilter('cheaper')"
+    >
+      Más económicos
+    </button>
+    <button
+      mat-raised-button
+      color="secondary"
+      class="mb-3"
+      [ngClass]="{ active: activeFilter === 'expensive' }"
+      (click)="onFilter('expensive')"
+    >
+      Productos top
+    </button>
+    <button
+      mat-raised-button
+      color="secondary"
+      class="mb-3"
+      [ngClass]="{ active: activeFilter === 'popular' }"
+      (click)="onFilter('popular')"
+    >
+      Más vendidos
+    </button>
+    <button
+      mat-raised-button
+      color="secondary"
+      class="mb-3"
+      (click)="onFilter('reset')"
+    >
+      Resetear filtro
+    </button>
+
+    <div class="mt-5 mb-3">
+      <h2>Products</h2>
+    </div>
+
+    <div *ngFor="let product of products" class="mb-2">
+      <mat-card
+        (click)="onWatchProduct(product.id)"
+        [ngClass]="{ selected: selectedProduct?.id === product.id }"
+        [ngStyle]="{'cursor': 'pointer'}"
+      >
+        <mat-card-content
+          class="d-flex justify-content-between align-items-center"
+        >
+          <div>{{ product.product }}</div>
+          <mat-icon>chevron_right</mat-icon>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

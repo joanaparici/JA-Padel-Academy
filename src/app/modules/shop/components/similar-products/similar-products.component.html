@@ -1,0 +1,42 @@
+<div
+  *ngIf="
+    selectedProduct &&
+    selectedProduct.similarProducts &&
+    selectedProduct.similarProducts.length > 0
+  "
+  class="row border-bottom my-3 m-2 pb-3"
+>
+  <div class="col d-flex justify-content-center">
+    <h2>Similar Products</h2>
+  </div>
+  <div *ngIf="selectedProduct" class="d-flex flex-wrap justify-content-around">
+    <div
+      *ngFor="let similarProduct of selectedProduct.similarProducts"
+      class="clickable mx-5 my-5"
+    >
+      <div (click)="onWatchProduct(similarProduct.id)">
+        <div>
+          <img
+            src="../assets/img/{{ similarProduct.id }}.png"
+            alt="similarProducts"
+            width="180px"
+            height="150px"
+          />
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="d-flex flex-column">
+            <div>
+              <p class="mb-0">{{ similarProduct.product }}</p>
+            </div>
+            <div class="d-flex flex-row">
+              <app-stars-rating
+                [rating]="similarProduct.rating"
+              ></app-stars-rating>
+            </div>
+            <div class="price">{{ similarProduct.price }}€</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

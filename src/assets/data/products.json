@@ -1,0 +1,151 @@
+[
+  {
+    "product": "Camiseta JA chico",
+    "id": 0,
+    "price": 25,
+    "currency": "€",
+    "rating": 4.5,
+    "favorite": false,
+    "description": "Camiseta de alta calidad diseñada para el rendimiento deportivo y el confort en el juego.",
+    "similarProducts": [
+      {
+        "product": "Camiseta JA chica",
+        "id": 1,
+        "price": 25,
+        "currency": "€",
+        "rating": 4.5,
+        "favorite": false,
+        "description": "Camiseta ligera y transpirable, ideal para las competiciones y entrenamientos."
+      },
+      {
+        "product": "Sudadera equipo unisex",
+        "id": 4,
+        "price": 35,
+        "currency": "€",
+        "rating": 4.2,
+        "favorite": false,
+        "description": "Sudadera cómoda y versátil para antes y después de los partidos."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Juan G.",
+        "rating": 4,
+        "opinion": "Muy cómoda para jugar y resistente a los lavados frecuentes.",
+        "date": "2023-04-15 12:30"
+      }
+    ]
+  },
+  {
+    "product": "Camiseta JA chica",
+    "id": 1,
+    "price": 25,
+    "currency": "€",
+    "rating": 4.7,
+    "favorite": false,
+    "description": "Diseñada para maximizar la comodidad y la movilidad durante el juego.",
+    "similarProducts": [
+      {
+        "product": "Falda equipo chica",
+        "id": 3,
+        "price": 22,
+        "currency": "€",
+        "rating": 4.6,
+        "favorite": false,
+        "description": "Falda deportiva con shorts integrados para una cobertura óptima."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Ana P.",
+        "rating": 5,
+        "opinion": "Perfecta para los entrenamientos intensos, muy fresca y ligera.",
+        "date": "2023-03-22 09:20"
+      }
+    ]
+  },
+  {
+    "product": "Pantalon equipo chico",
+    "id": 2,
+    "price": 30,
+    "currency": "€",
+    "rating": 4.3,
+    "favorite": false,
+    "description": "Pantalones diseñados para el confort y la durabilidad en la cancha.",
+    "similarProducts": [
+      {
+        "product": "Sudadera equipo unisex",
+        "id": 4,
+        "price": 35,
+        "currency": "€",
+        "rating": 4.2,
+        "favorite": false,
+        "description": "Ideal para los entrenamientos en días fríos o para calentar antes del partido."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Carlos M.",
+        "rating": 4,
+        "opinion": "Gran calidad y ajuste perfecto para jugar sin restricciones.",
+        "date": "2023-04-10 14:50"
+      }
+    ]
+  },
+  {
+    "product": "Falda equipo chica",
+    "id": 3,
+    "price": 22,
+    "currency": "€",
+    "rating": 4.8,
+    "favorite": false,
+    "description": "Falda con un diseño moderno y funcional, incluye shorts para mayor comodidad.",
+    "similarProducts": [
+      {
+        "product": "Camiseta JA chica",
+        "id": 1,
+        "price": 25,
+        "currency": "€",
+        "rating": 4.7,
+        "favorite": false,
+        "description": "Ligera y con tecnología de secado rápido para mantener el confort durante el juego."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Sofía R.",
+        "rating": 5,
+        "opinion": "Me encanta el diseño y la funcionalidad, es perfecta para la competición.",
+        "date": "2023-01-20 16:45"
+      }
+    ]
+  },
+  {
+    "product": "Sudadera equipo unisex",
+    "id": 4,
+    "price": 35,
+    "currency": "€",
+    "rating": 4.0,
+    "favorite": false,
+    "description": "Sudadera unisex para equipo, ideal para las mañanas frías o como prenda sobre la camiseta del equipo.",
+    "similarProducts": [
+      {
+        "product": "Pantalon equipo chico",
+        "id": 2,
+        "price": 30,
+        "currency": "€",
+        "rating": 4.3,
+        "favorite": false,
+        "description": "Pantalones cómodos y duraderos, perfectos para entrenamientos y partidos."
+      }
+    ],
+    "reviews": [
+      {
+        "name": "Luis F.",
+        "rating": 3,
+        "opinion": "Buen material, pero esperaba un poco más de calidez para los días muy fríos.",
+        "date": "2023-02-11 08:00"
+      }
+    ]
+  }
+]

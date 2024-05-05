@@ -1,0 +1,27 @@
+img{
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .clickable{
+    cursor: pointer;
+  }
+  
+  .container{
+    min-width: 100% !important;
+    padding-left: 10px;
+  }
+
+  .selected-product{
+    color: rgb(33, 108, 221);
+  }
+
+  .active-filter {
+    background-color: blue;
+    color: white;
+  }
+  .active {
+    background-color: #005cbf;
+    color: white;
+  }
+  
