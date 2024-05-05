@@ -1,0 +1,7 @@
+<i
+  *ngFor="let star of getStarList(rating); let i = index"
+  [class]="star"
+  [style.color]="getStarsColor(rating)"
+  (click)="changeRating(i + 1)"
+></i>
+<p>5 reviews</p>
