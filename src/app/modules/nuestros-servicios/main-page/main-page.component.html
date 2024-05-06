@@ -1,0 +1,26 @@
+<div class="container-fluid my-5 p-0">
+  <h2 class="text-center mb-4">Nuestros Servicios</h2>
+
+  <div
+    *ngFor="let service of services; let i = index"
+    class="row g-0 align-items-stretch mb-0"
+  >
+    <div [class.order-md-2]="service.reverse" class="col-md-6">
+      <img
+        [src]="service.imgSrc"
+        [alt]="service.title"
+        class="img-fluid w-100 h-100"
+      />
+    </div>
+    <div [class.order-md-1]="service.reverse" class="col-md-6 d-flex">
+      <mat-card class="w-100 d-flex flex-column">
+        <mat-card-header>
+          <mat-card-title>{{ service.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="flex-grow-1">
+          <p>{{ service.description }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

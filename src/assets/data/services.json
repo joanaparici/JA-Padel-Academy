@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Clases en Grupo",
+    "imgSrc": "./assets/img/carlos-lucia.jpg",
+    "description": "Participa en nuestras clases grupales donde podrás aprender y mejorar mientras te diviertes en un ambiente dinámico y social.",
+    "reverse": false
+  },
+  {
+    "title": "Clases Particulares",
+    "imgSrc": "./assets/img/yo-adidas.jpg",
+    "description": "Optimiza tu aprendizaje con atención personalizada diseñada para mejorar tus habilidades específicas y alcanzar tus metas personales.",
+    "reverse": true
+  },
+  {
+    "title": "Equipos de Competición",
+    "imgSrc": "./assets/img/teamMasc.png",
+    "description": "Únete a nuestros equipos de competición y compite en torneos locales y nacionales, mejorando tu juego en un entorno competitivo.",
+    "reverse": false
+  },
+  {
+    "title": "Movin Padel",
+    "imgSrc": "./assets/img/MovinPadel.png",
+    "description": "Descubre una nueva dimensión del pádel con nuestros exclusivos viajes alrededor del mundo...",
+    "reverse": true
+  },
+  {
+    "title": "Eventos",
+    "imgSrc": "./assets/img/cena.jpg",
+    "description": "Después de una intensa jornada de pádel, únete a nosotros en nuestras cenas organizadas...",
+    "reverse": false
+  }
+]
