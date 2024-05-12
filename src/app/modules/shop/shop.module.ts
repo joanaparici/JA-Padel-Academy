@@ -18,6 +18,8 @@ import { NewProductComponent } from './components/new-product/new-product.compon
 import { SimilarProductsComponent } from './components/similar-products/similar-products.component';
 import { StarsRatingComponent } from './components/stars-rating/stars-rating.component';
 import { CartComponent } from './components/cart/cart.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,7 @@ import { CartComponent } from './components/cart/cart.component';
     NewProductComponent,
   ],
   imports: [
-    CommonModule, // Importar CommonModule en lugar de BrowserModule
+    CommonModule,
     ShopRoutingModule,
     FormsModule,
     ReactiveFormsModule,
@@ -39,6 +41,8 @@ import { CartComponent } from './components/cart/cart.component';
     MatIconModule,
     MatListModule,
     MatCardModule,
+    MatFormFieldModule,
+    MatInputModule,
   ],
 })
 export class ShopModule {}

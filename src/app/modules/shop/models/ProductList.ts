@@ -8,11 +8,11 @@ export class ProductList {
   }
 
   getCheaperProducts() {
-    return new ProductList(this.all.filter((product) => product.price < 2000));
+    return new ProductList(this.all.filter((product) => product.price < 26));
   }
 
   getExpensiveProducts() {
-    return new ProductList(this.all.filter((product) => product.price > 2000));
+    return new ProductList(this.all.filter((product) => product.price > 26));
   }
 
   getPopularProducts() {
