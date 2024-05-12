@@ -8,12 +8,7 @@
       (filterSelected)="filterChanged($event)"
     ></app-sidebar>
   </div>
-  <div
-    class="col-9"
-    [ngStyle]="{
-      'background-color': selectedProduct?.favorite ? '#9b9b9b' : 'transparent'
-    }"
-  >
+  <div class="col-9">
     <app-product-details
       *ngIf="selectedProduct"
       [selectedProduct]="selectedProduct"
