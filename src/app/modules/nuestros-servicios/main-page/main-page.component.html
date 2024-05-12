@@ -3,6 +3,7 @@
 
   <div
     *ngFor="let service of services; let i = index"
+    [@fadeIn]
     class="row g-0 align-items-stretch mb-0"
   >
     <div [class.order-md-2]="service.reverse" class="col-md-6">
